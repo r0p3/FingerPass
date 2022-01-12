@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r0p3_Password_Manager.Views.CustomControls.CheckboxText">
+  <ContentView.Content>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="CheckBox"
+                      IsChecked="{Binding Lowercase}"
+                      Color="{StaticResource TextColorHighlight}"
+                      />
+            <Label x:Name="Text"
+                   Style="{StaticResource CheckBoxLabel}"
+                   Text="Lowercase"
+                   TextColor="White"
+                   />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="r0p3_Password_Manager.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BackgroundColor">#121212</Color>
+            <Color x:Key="Primary">#1D1D1D</Color>
+            <Color x:Key="ButtonColor">CadetBLue</Color>
+            <Color x:Key="BorderColor">#606368</Color>
+            <Color x:Key="TextColorNormal">White</Color>
+            <Color x:Key="TextColorHighlight">Gold</Color>
+            <Color x:Key="PlaceholderColor">Gray</Color>
+        </ResourceDictionary>
+
+        <Style TargetType="Entry" x:Key="CustomEntry">
+            <Setter Property="PlaceholderColor" Value="Gray"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="BackgroundColor" Value="{StaticResource Primary}"></Setter>
+        </Style>
+
+        <Style TargetType="Label" x:Key="CheckBoxLabel">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="Label" x:Key="ListViewlabel">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+        </Style>
+        <Style x:Key="PasswordDetailsLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextColorNormal}"></Setter>
+            <Setter Property="FontSize" Value="Medium"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>

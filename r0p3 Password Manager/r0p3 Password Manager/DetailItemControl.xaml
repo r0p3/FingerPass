@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="r0p3_Password_Manager.DetailItemControl"
+             >
+  <ContentView.Content>
+        <Frame BackgroundColor="{StaticResource Primary}" Margin="0" CornerRadius="0" BorderColor="{StaticResource BorderColor}" Padding="15" HeightRequest="60">
+            <Grid>
+                <Label x:Name="Title"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="7"
+                       TextColor="Gold"
+                       VerticalTextAlignment="Center"/>
+
+                <Label x:Name="Detail"
+                       Style="{StaticResource PasswordDetailsLabel}"
+                       Grid.Row="1"
+                       Grid.RowSpan="2"                       
+                       Grid.ColumnSpan="7"
+                       VerticalTextAlignment="End"/>
+                
+                <Button x:Name="BtnCopy"
+                        Text="Copy"
+                        BackgroundColor="{StaticResource Primary}"
+                        Grid.Row="0"
+                        Grid.RowSpan="3"
+                        Grid.Column="8"
+                        Grid.ColumnSpan="3"
+                        TextColor="White"/>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

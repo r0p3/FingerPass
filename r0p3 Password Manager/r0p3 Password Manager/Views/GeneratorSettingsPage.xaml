@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viwemodels="clr-namespace:r0p3_Password_Manager.ViewModels" xmlns:customcontrols="clr-namespace:r0p3_Password_Manager.Views.CustomControls"
+             x:Class="r0p3_Password_Manager.Views.GeneratorSettingsPage"
+             BackgroundColor="{StaticResource BackgroundColor}">
+    <ContentPage.BindingContext>
+    <viwemodels:GeneratorSettingsViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <CheckBox/>
+                <Label/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
